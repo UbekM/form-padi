@@ -1,6 +1,5 @@
 /** @format */
 
-import { type } from "os";
 import React from "react";
 
 type TemplateProps = {
@@ -11,11 +10,11 @@ type TemplateProps = {
 const Template: React.FC<TemplateProps> = ({ header, body }) => {
   return (
     <div className="shadow-lg">
-      <div className="space-y-5 p-5 pb-12 ">
+      <div className="space-y-6 p-6 pb-16 ">
         <h2 className="text-2xl font-medium">{header}</h2>
         <p>{body}</p>
       </div>
-      <div className="">
+      <div className="bg-[#F9F9F9]">
         <p className="bg-[#F9F9F9] text-[#08BD37] p-5 py-3">Use Template</p>
       </div>
     </div>

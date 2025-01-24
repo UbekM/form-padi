@@ -18,9 +18,28 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-4 justify-center lg:justify-start">
         <p>Sort By:</p>
-        <SelectComp category="Category" defaultValue="All" />
-        <SelectComp category="Order" defaultValue="Default" />
-        <SelectComp category="Date" defaultValue="Default" />
+        <SelectComp
+          category="Category"
+          defaultValue="All"
+          option1="All"
+          option2="Education"
+          option3="E-commerce"
+          option4="Health"
+        />
+        <SelectComp
+          category="Order"
+          defaultValue="Default"
+          option1="All"
+          option2="Ascending"
+          option3="Descending"
+        />
+        <SelectComp
+          category="Date"
+          defaultValue="Default"
+          option1="All"
+          option2="Ascending"
+          option3="Descending"
+        />
       </div>
     </div>
   );
