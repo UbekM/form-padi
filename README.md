@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!-- @format -->
 
-## Getting Started
+# Form Padi - MAP Developer Challenge
 
-First, run the development server:
+I have only worked on the UI, if given more time, I'll add the functionalities.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Had a hard time with the API, so I used a mock API, which was also took time integrating...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Thank you.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Form Padi is a form searcher app built with **Next.js**, allowing users to search and filter form templates from a mock REST API. It is responsive and uses a component-based architecture for maintainability.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+- Search templates by category: All, Education, E-commerce, Health.
+- Filter templates by:
+  - Alphabetical Order: Default, Ascending, Descending.
+  - Date Created: Default, Ascending, Descending.
+- Responsive design for mobile and tablet screens.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **State Management**: Redux Toolkit
+- **HTTP Client**: Axios
+- **Hosting**: Vercel
 
-## Deploy on Vercel
+## API Details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Endpoint**: `https://caselops.free.beeceptor.com/template`
+- **Method**: GET
+- **Sample Response**:
+  ```json
+  [
+    {
+      "name": "Blood donation form template",
+      "created": "2020-11-04T16:26:44.666569Z",
+      "category": ["Health"],
+      "description": "Testing template",
+      "link": ""
+    }
+  ]
+  ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/[your-username]/map-form-padi-[your-initials].git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the app:
+   ```bash
+   npm run dev
+   ```
+
+## Deployment
+
+- [Live Project](https://your-vercel-project-link.vercel.app)
+
+## Notes
+
+- The `link` field in the API response is not active.
+- Large datasets and pagination are not supported.
+
+---
+
+**Built with ❤️ by [Your Name]**
